@@ -50,7 +50,7 @@
 							},
 							{
 								"source": {
-									"path": "$['features'][0]['type']"
+									"path": "['type']"
 								},
 								"sink": {
 									"type": "String",
@@ -59,7 +59,7 @@
 							},
 							{
 								"source": {
-									"path": "$['features'][0]['id']"
+									"path": "['id']"
 								},
 								"sink": {
 									"type": "String",
@@ -68,7 +68,7 @@
 							},
 							{
 								"source": {
-									"path": "$['features'][0]['geometry']['type']"
+									"path": "['geometry']['type']"
 								},
 								"sink": {
 									"ordinal": 4
@@ -76,7 +76,7 @@
 							},
 							{
 								"source": {
-									"path": "$['features'][0]['geometry_name']"
+									"path": "['geometry_name']"
 								},
 								"sink": {
 									"ordinal": 5
@@ -84,7 +84,7 @@
 							},
 							{
 								"source": {
-									"path": "$['features'][0]['properties']['id']"
+									"path": "['properties']['id']"
 								},
 								"sink": {
 									"type": "Int64",
@@ -93,7 +93,7 @@
 							},
 							{
 								"source": {
-									"path": "$['features'][0]['properties']['versionedId']"
+									"path": "['properties']['versionedId']"
 								},
 								"sink": {
 									"ordinal": 7
@@ -101,7 +101,7 @@
 							},
 							{
 								"source": {
-									"path": "$['features'][0]['properties']['rootId']"
+									"path": "['properties']['rootId']"
 								},
 								"sink": {
 									"ordinal": 8
@@ -109,7 +109,7 @@
 							},
 							{
 								"source": {
-									"path": "$['features'][0]['properties']['organizationId']"
+									"path": "['properties']['organizationId']"
 								},
 								"sink": {
 									"ordinal": 9
@@ -117,7 +117,7 @@
 							},
 							{
 								"source": {
-									"path": "$['features'][0]['properties']['addressId']"
+									"path": "['properties']['addressId']"
 								},
 								"sink": {
 									"ordinal": 10
@@ -125,7 +125,7 @@
 							},
 							{
 								"source": {
-									"path": "$['features'][0]['properties']['addressType']"
+									"path": "['properties']['addressType']"
 								},
 								"sink": {
 									"ordinal": 11
@@ -133,7 +133,7 @@
 							},
 							{
 								"source": {
-									"path": "$['features'][0]['properties']['currentlyOpen']"
+									"path": "['properties']['currentlyOpen']"
 								},
 								"sink": {
 									"ordinal": 12
@@ -141,7 +141,7 @@
 							},
 							{
 								"source": {
-									"path": "$['features'][0]['properties']['channelNameFi']"
+									"path": "['properties']['channelNameFi']"
 								},
 								"sink": {
 									"type": "String",
@@ -150,7 +150,7 @@
 							},
 							{
 								"source": {
-									"path": "$['features'][0]['properties']['organizationNameFi']"
+									"path": "['properties']['organizationNameFi']"
 								},
 								"sink": {
 									"type": "String",
@@ -159,7 +159,7 @@
 							},
 							{
 								"source": {
-									"path": "$['features'][0]['properties']['addressFi']"
+									"path": "['properties']['addressFi']"
 								},
 								"sink": {
 									"type": "String",
@@ -168,7 +168,7 @@
 							},
 							{
 								"source": {
-									"path": "$['features'][0]['properties']['addressAdditionalInformationFi']"
+									"path": "['properties']['addressAdditionalInformationFi']"
 								},
 								"sink": {
 									"type": "String",
@@ -177,7 +177,7 @@
 							},
 							{
 								"source": {
-									"path": "$['features'][0]['properties']['municipalityCode']"
+									"path": "['properties']['municipalityCode']"
 								},
 								"sink": {
 									"type": "String",
@@ -186,7 +186,7 @@
 							},
 							{
 								"source": {
-									"path": "$['features'][0]['properties']['municipalityNameFi']"
+									"path": "['properties']['municipalityNameFi']"
 								},
 								"sink": {
 									"type": "String",
@@ -195,7 +195,7 @@
 							},
 							{
 								"source": {
-									"path": "$['features'][0]['properties']['phoneNumbersFi']"
+									"path": "['properties']['phoneNumbersFi']"
 								},
 								"sink": {
 									"type": "String",
@@ -204,7 +204,7 @@
 							},
 							{
 								"source": {
-									"path": "$['features'][0]['properties']['normalOpeningHoursFi']"
+									"path": "['properties']['normalOpeningHoursFi']"
 								},
 								"sink": {
 									"type": "String",
@@ -213,7 +213,7 @@
 							},
 							{
 								"source": {
-									"path": "$['features'][0]['properties']['exceptionalOpeningHoursFi']"
+									"path": "['properties']['exceptionalOpeningHoursFi']"
 								},
 								"sink": {
 									"type": "String",
@@ -222,7 +222,7 @@
 							},
 							{
 								"source": {
-									"path": "$['features'][0]['properties']['bankholidayOpeningHoursFi']"
+									"path": "['properties']['bankholidayOpeningHoursFi']"
 								},
 								"sink": {
 									"type": "String",
@@ -231,7 +231,7 @@
 							},
 							{
 								"source": {
-									"path": "$['features'][0]['properties']['overmidnightOpeningHoursFi']"
+									"path": "['properties']['overmidnightOpeningHoursFi']"
 								},
 								"sink": {
 									"type": "String",
@@ -240,7 +240,7 @@
 							},
 							{
 								"source": {
-									"path": "$['features'][0]['properties']['serviceId']"
+									"path": "['properties']['serviceId']"
 								},
 								"sink": {
 									"ordinal": 24
@@ -248,7 +248,7 @@
 							},
 							{
 								"source": {
-									"path": "$['features'][0]['properties']['serviceNameFi']"
+									"path": "['properties']['serviceNameFi']"
 								},
 								"sink": {
 									"ordinal": 25
@@ -256,7 +256,7 @@
 							},
 							{
 								"source": {
-									"path": "$['features'][0]['properties']['serviceNameEn']"
+									"path": "['properties']['serviceNameEn']"
 								},
 								"sink": {
 									"ordinal": 26
@@ -264,7 +264,7 @@
 							},
 							{
 								"source": {
-									"path": "$['features'][0]['properties']['coordinateState']"
+									"path": "['properties']['coordinateState']"
 								},
 								"sink": {
 									"ordinal": 27
@@ -272,7 +272,7 @@
 							},
 							{
 								"source": {
-									"path": "$['features'][0]['properties']['coordinateType']"
+									"path": "['properties']['coordinateType']"
 								},
 								"sink": {
 									"ordinal": 28
@@ -327,7 +327,8 @@
 								}
 							}
 						],
-						"collectionReference": ""
+						"collectionReference": "$['features']",
+						"mapComplexValuesToString": false
 					}
 				},
 				"inputs": [
