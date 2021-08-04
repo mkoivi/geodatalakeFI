@@ -1,0 +1,13 @@
+{
+    "name": "geoadlLinkedService",
+    "properties": {
+        "type": "AzureBlobFS",
+        "typeProperties": {
+            "url": "https://geodatalake.dfs.core.windows.net",
+            "accountkey": {
+                "type": "SecureString",
+                "value": "DefaultEndpointsProtocol=https;EndpointSuffix=core.windows.net;AccountName=geodatalake;AccountKey=3COJHya0ZtSh/LKSfG/aWTbvnW4VLsgRbGtwFAazpXWbYQXlJcgFfebHhn1vMkBTUbwCQy4luCkf5Yw3KrtykQ=="
+            }
+        }
+    }
+}

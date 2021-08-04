@@ -1,0 +1,38 @@
+https://ircama.github.io/osm-carto-tutorials/tile-server-ubuntu/
+...asenna posgres, postgis, carto, lataa osm data
+
+# install blobfuse
+
+wget https://packages.microsoft.com/config/ubuntu/18.04/packages-microsoft-prod.deb
+sudo dpkg -i packages-microsoft-prod.deb
+sudo apt-get update
+sudo apt-get install blobfuse
+
+luo blobfusen asennusfile, blobfuse_adl.cfg:
+accountName myaccount
+accountKey storageaccesskey
+containerName mycontainer
+
+azureuser@geodb-vm:~$ nano ~/blobfuse_adl.cfg
+azureuser@geodb-vm:~$ touch ~/blobfuse_adl.cfg
+azureuser@geodb-vm:~$ chmod 600 ~/blobfuse_adl.cfg
+azureuser@geodb-vm:~$ mkdir ~/geodatalake
+
+sudo blobfuse ~/geodatalake --tmp-path=/mnt/resource/blobfusetmp  --config-file=/home/azureuser/blobfuse_adl.cfg -o attr_timeout=240 -o entry_timeout=240 -o negative_timeout=120 -o allow_other
+
+# get all shapefiles
+find $(pwd) -maxdepth 3 -type f -path '*/*.shp'
+
+# create tiepiste table
+shp2pgsql -c -s 3067 -W "latin1" /home/azureuser/geodatalake/maastotietokanta/X5/X52.zip/X52_TiePiste.shp tiepiste
+shp2pgsql -c -s 3067 -W "latin1" /home/azureuser/geodatalake/maastotietokanta/X5/X52.zip/X52_TieViiva.shp tieviiva | psql -U postgres gis
+
+# list all shapefiles in maastotietokanta folder and insert to db
+cd /home/azureuser/geodatalake/maastotietokanta
+find $(pwd) -maxdepth 3 -type f -path '*/*.shp' | while read file; do
+   echo $file;
+   filename=(${file//_/ })
+   tablename=(${filename[1]//./ })
+   echo ${tablename[0]};
+    shp2pgsql -c -s 3067 -W "latin1" $file ${tablename[0]} | psql -U postgres gis;
+done
