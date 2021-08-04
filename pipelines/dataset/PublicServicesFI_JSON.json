@@ -1,0 +1,221 @@
+{
+	"name": "PublicServicesFI_JSON",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "Suomifi_Palvelutietovaranto",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "HttpServerLocation",
+				"relativeUrl": "ows?service=WFS&version=1.0.0&request=GetFeature&typeName=ptv%3AserviceChannel&maxFeatures=50&outputFormat=application/json"
+			}
+		},
+		"schema": {
+			"type": "object",
+			"properties": {
+				"type": {
+					"type": "string"
+				},
+				"features": {
+					"type": "array",
+					"items": {
+						"type": "object",
+						"properties": {
+							"type": {
+								"type": "string"
+							},
+							"id": {
+								"type": "string"
+							},
+							"geometry": {
+								"type": "object",
+								"properties": {
+									"type": {
+										"type": "string"
+									},
+									"coordinates": {
+										"type": "array",
+										"items": {
+											"type": "number"
+										}
+									}
+								}
+							},
+							"geometry_name": {
+								"type": "string"
+							},
+							"properties": {
+								"type": "object",
+								"properties": {
+									"id": {
+										"type": "integer"
+									},
+									"versionedId": {
+										"type": "string"
+									},
+									"rootId": {
+										"type": "string"
+									},
+									"organizationId": {
+										"type": "string"
+									},
+									"addressId": {
+										"type": "string"
+									},
+									"addressType": {
+										"type": "string"
+									},
+									"currentlyOpen": {
+										"type": "string"
+									},
+									"channelNameFi": {
+										"type": "string"
+									},
+									"channelNameSv": {
+										"type": "string"
+									},
+									"channelNameEn": {
+										"type": "string"
+									},
+									"organizationNameFi": {
+										"type": "string"
+									},
+									"organizationNameSv": {
+										"type": "string"
+									},
+									"organizationNameEn": {
+										"type": "string"
+									},
+									"addressFi": {
+										"type": "string"
+									},
+									"addressSv": {
+										"type": "string"
+									},
+									"addressEn": {
+										"type": "null"
+									},
+									"addressAdditionalInformationFi": {
+										"type": "null"
+									},
+									"addressAdditionalInformationSv": {
+										"type": "null"
+									},
+									"addressAdditionalInformationEn": {
+										"type": "null"
+									},
+									"municipalityCode": {
+										"type": "string"
+									},
+									"municipalityNameFi": {
+										"type": "string"
+									},
+									"municipalityNameSv": {
+										"type": "string"
+									},
+									"municipalityNameEn": {
+										"type": "string"
+									},
+									"phoneNumbersFi": {
+										"type": "string"
+									},
+									"phoneNumbersSv": {
+										"type": "null"
+									},
+									"phoneNumbersEn": {
+										"type": "null"
+									},
+									"normalOpeningHoursFi": {
+										"type": "null"
+									},
+									"normalOpeningHoursSv": {
+										"type": "null"
+									},
+									"normalOpeningHoursEn": {
+										"type": "null"
+									},
+									"exceptionalOpeningHoursFi": {
+										"type": "null"
+									},
+									"exceptionalOpeningHoursSv": {
+										"type": "null"
+									},
+									"exceptionalOpeningHoursEn": {
+										"type": "null"
+									},
+									"bankholidayOpeningHoursFi": {
+										"type": "null"
+									},
+									"bankholidayOpeningHoursSv": {
+										"type": "null"
+									},
+									"bankholidayOpeningHoursEn": {
+										"type": "null"
+									},
+									"overmidnightOpeningHoursFi": {
+										"type": "null"
+									},
+									"overmidnightOpeningHoursSv": {
+										"type": "null"
+									},
+									"overmidnightOpeningHoursEn": {
+										"type": "null"
+									},
+									"serviceId": {
+										"type": "string"
+									},
+									"serviceNameFi": {
+										"type": "string"
+									},
+									"serviceNameSv": {
+										"type": "string"
+									},
+									"serviceNameEn": {
+										"type": "string"
+									},
+									"coordinateState": {
+										"type": "string"
+									},
+									"coordinateType": {
+										"type": "string"
+									}
+								}
+							}
+						}
+					}
+				},
+				"totalFeatures": {
+					"type": "integer"
+				},
+				"numberMatched": {
+					"type": "integer"
+				},
+				"numberReturned": {
+					"type": "integer"
+				},
+				"timeStamp": {
+					"type": "string"
+				},
+				"crs": {
+					"type": "object",
+					"properties": {
+						"type": {
+							"type": "string"
+						},
+						"properties": {
+							"type": "object",
+							"properties": {
+								"name": {
+									"type": "string"
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
