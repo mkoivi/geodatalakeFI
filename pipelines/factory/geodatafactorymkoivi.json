@@ -1,0 +1,9 @@
+{
+	"name": "geodatafactorymkoivi",
+	"location": "westeurope",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "2c086a8a-a5dd-4d9f-b9a2-85ec838bb54a",
+		"tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47"
+	}
+}

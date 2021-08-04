@@ -1,0 +1,22 @@
+{
+	"name": "Maastotietokanta",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "MML_Kapsi_FTP",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Binary",
+		"typeProperties": {
+			"location": {
+				"type": "FtpServerLocation",
+				"folderPath": "maastokartta_100k/kaikki/etrs89/shp"
+			},
+			"compression": {
+				"type": "ZipDeflate",
+				"level": "Fastest"
+			}
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
