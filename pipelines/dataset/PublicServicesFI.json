@@ -18,6 +18,191 @@
 			"firstRowAsHeader": true,
 			"quoteChar": "\""
 		},
-		"schema": []
+		"schema": [
+			{
+				"name": "FID",
+				"type": "String"
+			},
+			{
+				"name": "id",
+				"type": "String"
+			},
+			{
+				"name": "versionedId",
+				"type": "String"
+			},
+			{
+				"name": "rootId",
+				"type": "String"
+			},
+			{
+				"name": "organizationId",
+				"type": "String"
+			},
+			{
+				"name": "addressId",
+				"type": "String"
+			},
+			{
+				"name": "addressType",
+				"type": "String"
+			},
+			{
+				"name": "currentlyOpen",
+				"type": "String"
+			},
+			{
+				"name": "channelNameFi",
+				"type": "String"
+			},
+			{
+				"name": "channelNameSv",
+				"type": "String"
+			},
+			{
+				"name": "channelNameEn",
+				"type": "String"
+			},
+			{
+				"name": "organizationNameFi",
+				"type": "String"
+			},
+			{
+				"name": "organizationNameSv",
+				"type": "String"
+			},
+			{
+				"name": "organizationNameEn",
+				"type": "String"
+			},
+			{
+				"name": "addressFi",
+				"type": "String"
+			},
+			{
+				"name": "addressSv",
+				"type": "String"
+			},
+			{
+				"name": "addressEn",
+				"type": "String"
+			},
+			{
+				"name": "addressAdditionalInformationFi",
+				"type": "String"
+			},
+			{
+				"name": "addressAdditionalInformationSv",
+				"type": "String"
+			},
+			{
+				"name": "addressAdditionalInformationEn",
+				"type": "String"
+			},
+			{
+				"name": "municipalityCode",
+				"type": "String"
+			},
+			{
+				"name": "municipalityNameFi",
+				"type": "String"
+			},
+			{
+				"name": "municipalityNameSv",
+				"type": "String"
+			},
+			{
+				"name": "municipalityNameEn",
+				"type": "String"
+			},
+			{
+				"name": "phoneNumbersFi",
+				"type": "String"
+			},
+			{
+				"name": "phoneNumbersSv",
+				"type": "String"
+			},
+			{
+				"name": "phoneNumbersEn",
+				"type": "String"
+			},
+			{
+				"name": "normalOpeningHoursFi",
+				"type": "String"
+			},
+			{
+				"name": "normalOpeningHoursSv",
+				"type": "String"
+			},
+			{
+				"name": "normalOpeningHoursEn",
+				"type": "String"
+			},
+			{
+				"name": "exceptionalOpeningHoursFi",
+				"type": "String"
+			},
+			{
+				"name": "exceptionalOpeningHoursSv",
+				"type": "String"
+			},
+			{
+				"name": "exceptionalOpeningHoursEn",
+				"type": "String"
+			},
+			{
+				"name": "bankholidayOpeningHoursFi",
+				"type": "String"
+			},
+			{
+				"name": "bankholidayOpeningHoursSv",
+				"type": "String"
+			},
+			{
+				"name": "bankholidayOpeningHoursEn",
+				"type": "String"
+			},
+			{
+				"name": "overmidnightOpeningHoursFi",
+				"type": "String"
+			},
+			{
+				"name": "overmidnightOpeningHoursSv",
+				"type": "String"
+			},
+			{
+				"name": "overmidnightOpeningHoursEn",
+				"type": "String"
+			},
+			{
+				"name": "serviceId",
+				"type": "String"
+			},
+			{
+				"name": "serviceNameFi",
+				"type": "String"
+			},
+			{
+				"name": "serviceNameSv",
+				"type": "String"
+			},
+			{
+				"name": "serviceNameEn",
+				"type": "String"
+			},
+			{
+				"name": "coordinateState",
+				"type": "String"
+			},
+			{
+				"name": "coordinateType",
+				"type": "String"
+			},
+			{
+				"name": "location",
+				"type": "String"
+			}
+		]
 	}
 }
