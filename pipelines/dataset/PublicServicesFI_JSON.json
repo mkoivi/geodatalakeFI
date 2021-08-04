@@ -11,7 +11,8 @@
 			"location": {
 				"type": "HttpServerLocation",
 				"relativeUrl": "ows?service=WFS&version=1.0.0&request=GetFeature&typeName=ptv%3AserviceChannel&maxFeatures=50&outputFormat=application/json"
-			}
+			},
+			"encodingName": "ISO-8859-13"
 		},
 		"schema": {
 			"type": "object",
