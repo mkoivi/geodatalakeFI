@@ -1,0 +1,12 @@
+{
+	"name": "Suomifi_Palvelutietovaranto",
+	"properties": {
+		"annotations": [],
+		"type": "HttpServer",
+		"typeProperties": {
+			"url": "https://ws.palvelutietovaranto.suomi.fi/geoserver/ptv",
+			"enableServerCertificateValidation": true,
+			"authenticationType": "Anonymous"
+		}
+	}
+}
