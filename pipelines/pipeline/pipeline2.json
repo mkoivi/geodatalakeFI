@@ -53,6 +53,7 @@
 									"path": "$['features'][0]['type']"
 								},
 								"sink": {
+									"type": "String",
 									"ordinal": 2
 								}
 							},
@@ -167,23 +168,25 @@
 							},
 							{
 								"source": {
-									"path": "$['features'][0]['properties']['addressSv']"
+									"path": "$['features'][0]['properties']['addressAdditionalInformationFi']"
 								},
 								"sink": {
+									"type": "String",
 									"ordinal": 16
 								}
 							},
 							{
 								"source": {
-									"path": "$['features'][0]['properties']['addressEn']"
+									"path": "$['features'][0]['properties']['municipalityCode']"
 								},
 								"sink": {
+									"type": "String",
 									"ordinal": 17
 								}
 							},
 							{
 								"source": {
-									"path": "$['features'][0]['properties']['addressAdditionalInformationFi']"
+									"path": "$['features'][0]['properties']['municipalityNameFi']"
 								},
 								"sink": {
 									"type": "String",
@@ -192,43 +195,11 @@
 							},
 							{
 								"source": {
-									"path": "$['features'][0]['properties']['municipalityCode']"
-								},
-								"sink": {
-									"ordinal": 19
-								}
-							},
-							{
-								"source": {
-									"path": "$['features'][0]['properties']['municipalityNameFi']"
-								},
-								"sink": {
-									"ordinal": 20
-								}
-							},
-							{
-								"source": {
-									"path": "$['features'][0]['properties']['municipalityNameSv']"
-								},
-								"sink": {
-									"ordinal": 21
-								}
-							},
-							{
-								"source": {
-									"path": "$['features'][0]['properties']['municipalityNameEn']"
-								},
-								"sink": {
-									"ordinal": 22
-								}
-							},
-							{
-								"source": {
 									"path": "$['features'][0]['properties']['phoneNumbersFi']"
 								},
 								"sink": {
 									"type": "String",
-									"ordinal": 23
+									"ordinal": 19
 								}
 							},
 							{
@@ -237,7 +208,7 @@
 								},
 								"sink": {
 									"type": "String",
-									"ordinal": 24
+									"ordinal": 20
 								}
 							},
 							{
@@ -246,7 +217,7 @@
 								},
 								"sink": {
 									"type": "String",
-									"ordinal": 25
+									"ordinal": 21
 								}
 							},
 							{
@@ -255,7 +226,7 @@
 								},
 								"sink": {
 									"type": "String",
-									"ordinal": 26
+									"ordinal": 22
 								}
 							},
 							{
@@ -264,7 +235,7 @@
 								},
 								"sink": {
 									"type": "String",
-									"ordinal": 27
+									"ordinal": 23
 								}
 							},
 							{
@@ -272,7 +243,7 @@
 									"path": "$['features'][0]['properties']['serviceId']"
 								},
 								"sink": {
-									"ordinal": 28
+									"ordinal": 24
 								}
 							},
 							{
@@ -280,7 +251,7 @@
 									"path": "$['features'][0]['properties']['serviceNameFi']"
 								},
 								"sink": {
-									"ordinal": 29
+									"ordinal": 25
 								}
 							},
 							{
@@ -288,7 +259,7 @@
 									"path": "$['features'][0]['properties']['serviceNameEn']"
 								},
 								"sink": {
-									"ordinal": 30
+									"ordinal": 26
 								}
 							},
 							{
@@ -296,7 +267,7 @@
 									"path": "$['features'][0]['properties']['coordinateState']"
 								},
 								"sink": {
-									"ordinal": 31
+									"ordinal": 27
 								}
 							},
 							{
@@ -304,7 +275,7 @@
 									"path": "$['features'][0]['properties']['coordinateType']"
 								},
 								"sink": {
-									"ordinal": 32
+									"ordinal": 28
 								}
 							},
 							{
@@ -312,7 +283,7 @@
 									"path": "$['totalFeatures']"
 								},
 								"sink": {
-									"ordinal": 33
+									"ordinal": 29
 								}
 							},
 							{
@@ -320,7 +291,7 @@
 									"path": "$['numberMatched']"
 								},
 								"sink": {
-									"ordinal": 34
+									"ordinal": 30
 								}
 							},
 							{
@@ -328,7 +299,7 @@
 									"path": "$['numberReturned']"
 								},
 								"sink": {
-									"ordinal": 35
+									"ordinal": 31
 								}
 							},
 							{
@@ -336,7 +307,7 @@
 									"path": "$['timeStamp']"
 								},
 								"sink": {
-									"ordinal": 36
+									"ordinal": 32
 								}
 							},
 							{
@@ -344,7 +315,7 @@
 									"path": "$['crs']['type']"
 								},
 								"sink": {
-									"ordinal": 37
+									"ordinal": 33
 								}
 							},
 							{
@@ -352,7 +323,7 @@
 									"path": "$['crs']['properties']['name']"
 								},
 								"sink": {
-									"ordinal": 38
+									"ordinal": 34
 								}
 							}
 						],
