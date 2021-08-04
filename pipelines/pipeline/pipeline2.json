@@ -61,6 +61,7 @@
 									"path": "$['features'][0]['id']"
 								},
 								"sink": {
+									"type": "String",
 									"ordinal": 3
 								}
 							},
@@ -85,6 +86,7 @@
 									"path": "$['features'][0]['properties']['id']"
 								},
 								"sink": {
+									"type": "Int64",
 									"ordinal": 6
 								}
 							},
@@ -141,23 +143,8 @@
 									"path": "$['features'][0]['properties']['channelNameFi']"
 								},
 								"sink": {
+									"type": "String",
 									"ordinal": 13
-								}
-							},
-							{
-								"source": {
-									"path": "$['features'][0]['properties']['channelNameSv']"
-								},
-								"sink": {
-									"ordinal": 14
-								}
-							},
-							{
-								"source": {
-									"path": "$['features'][0]['properties']['channelNameEn']"
-								},
-								"sink": {
-									"ordinal": 15
 								}
 							},
 							{
@@ -165,23 +152,8 @@
 									"path": "$['features'][0]['properties']['organizationNameFi']"
 								},
 								"sink": {
-									"ordinal": 16
-								}
-							},
-							{
-								"source": {
-									"path": "$['features'][0]['properties']['organizationNameSv']"
-								},
-								"sink": {
-									"ordinal": 17
-								}
-							},
-							{
-								"source": {
-									"path": "$['features'][0]['properties']['organizationNameEn']"
-								},
-								"sink": {
-									"ordinal": 18
+									"type": "String",
+									"ordinal": 14
 								}
 							},
 							{
@@ -189,7 +161,8 @@
 									"path": "$['features'][0]['properties']['addressFi']"
 								},
 								"sink": {
-									"ordinal": 19
+									"type": "String",
+									"ordinal": 15
 								}
 							},
 							{
@@ -197,7 +170,7 @@
 									"path": "$['features'][0]['properties']['addressSv']"
 								},
 								"sink": {
-									"ordinal": 20
+									"ordinal": 16
 								}
 							},
 							{
@@ -205,7 +178,7 @@
 									"path": "$['features'][0]['properties']['addressEn']"
 								},
 								"sink": {
-									"ordinal": 21
+									"ordinal": 17
 								}
 							},
 							{
@@ -213,23 +186,8 @@
 									"path": "$['features'][0]['properties']['addressAdditionalInformationFi']"
 								},
 								"sink": {
-									"ordinal": 22
-								}
-							},
-							{
-								"source": {
-									"path": "$['features'][0]['properties']['addressAdditionalInformationSv']"
-								},
-								"sink": {
-									"ordinal": 23
-								}
-							},
-							{
-								"source": {
-									"path": "$['features'][0]['properties']['addressAdditionalInformationEn']"
-								},
-								"sink": {
-									"ordinal": 24
+									"type": "String",
+									"ordinal": 18
 								}
 							},
 							{
@@ -237,7 +195,7 @@
 									"path": "$['features'][0]['properties']['municipalityCode']"
 								},
 								"sink": {
-									"ordinal": 25
+									"ordinal": 19
 								}
 							},
 							{
@@ -245,7 +203,7 @@
 									"path": "$['features'][0]['properties']['municipalityNameFi']"
 								},
 								"sink": {
-									"ordinal": 26
+									"ordinal": 20
 								}
 							},
 							{
@@ -253,7 +211,7 @@
 									"path": "$['features'][0]['properties']['municipalityNameSv']"
 								},
 								"sink": {
-									"ordinal": 27
+									"ordinal": 21
 								}
 							},
 							{
@@ -261,7 +219,7 @@
 									"path": "$['features'][0]['properties']['municipalityNameEn']"
 								},
 								"sink": {
-									"ordinal": 28
+									"ordinal": 22
 								}
 							},
 							{
@@ -269,23 +227,8 @@
 									"path": "$['features'][0]['properties']['phoneNumbersFi']"
 								},
 								"sink": {
-									"ordinal": 29
-								}
-							},
-							{
-								"source": {
-									"path": "$['features'][0]['properties']['phoneNumbersSv']"
-								},
-								"sink": {
-									"ordinal": 30
-								}
-							},
-							{
-								"source": {
-									"path": "$['features'][0]['properties']['phoneNumbersEn']"
-								},
-								"sink": {
-									"ordinal": 31
+									"type": "String",
+									"ordinal": 23
 								}
 							},
 							{
@@ -293,23 +236,8 @@
 									"path": "$['features'][0]['properties']['normalOpeningHoursFi']"
 								},
 								"sink": {
-									"ordinal": 32
-								}
-							},
-							{
-								"source": {
-									"path": "$['features'][0]['properties']['normalOpeningHoursSv']"
-								},
-								"sink": {
-									"ordinal": 33
-								}
-							},
-							{
-								"source": {
-									"path": "$['features'][0]['properties']['normalOpeningHoursEn']"
-								},
-								"sink": {
-									"ordinal": 34
+									"type": "String",
+									"ordinal": 24
 								}
 							},
 							{
@@ -317,7 +245,8 @@
 									"path": "$['features'][0]['properties']['exceptionalOpeningHoursFi']"
 								},
 								"sink": {
-									"ordinal": 35
+									"type": "String",
+									"ordinal": 25
 								}
 							},
 							{
@@ -325,7 +254,8 @@
 									"path": "$['features'][0]['properties']['bankholidayOpeningHoursFi']"
 								},
 								"sink": {
-									"ordinal": 36
+									"type": "String",
+									"ordinal": 26
 								}
 							},
 							{
@@ -333,7 +263,8 @@
 									"path": "$['features'][0]['properties']['overmidnightOpeningHoursFi']"
 								},
 								"sink": {
-									"ordinal": 37
+									"type": "String",
+									"ordinal": 27
 								}
 							},
 							{
@@ -341,7 +272,7 @@
 									"path": "$['features'][0]['properties']['serviceId']"
 								},
 								"sink": {
-									"ordinal": 38
+									"ordinal": 28
 								}
 							},
 							{
@@ -349,7 +280,7 @@
 									"path": "$['features'][0]['properties']['serviceNameFi']"
 								},
 								"sink": {
-									"ordinal": 39
+									"ordinal": 29
 								}
 							},
 							{
@@ -357,7 +288,7 @@
 									"path": "$['features'][0]['properties']['serviceNameEn']"
 								},
 								"sink": {
-									"ordinal": 40
+									"ordinal": 30
 								}
 							},
 							{
@@ -365,7 +296,7 @@
 									"path": "$['features'][0]['properties']['coordinateState']"
 								},
 								"sink": {
-									"ordinal": 41
+									"ordinal": 31
 								}
 							},
 							{
@@ -373,7 +304,7 @@
 									"path": "$['features'][0]['properties']['coordinateType']"
 								},
 								"sink": {
-									"ordinal": 42
+									"ordinal": 32
 								}
 							},
 							{
@@ -381,7 +312,7 @@
 									"path": "$['totalFeatures']"
 								},
 								"sink": {
-									"ordinal": 43
+									"ordinal": 33
 								}
 							},
 							{
@@ -389,7 +320,7 @@
 									"path": "$['numberMatched']"
 								},
 								"sink": {
-									"ordinal": 44
+									"ordinal": 34
 								}
 							},
 							{
@@ -397,7 +328,7 @@
 									"path": "$['numberReturned']"
 								},
 								"sink": {
-									"ordinal": 45
+									"ordinal": 35
 								}
 							},
 							{
@@ -405,7 +336,7 @@
 									"path": "$['timeStamp']"
 								},
 								"sink": {
-									"ordinal": 46
+									"ordinal": 36
 								}
 							},
 							{
@@ -413,7 +344,7 @@
 									"path": "$['crs']['type']"
 								},
 								"sink": {
-									"ordinal": 47
+									"ordinal": 37
 								}
 							},
 							{
@@ -421,7 +352,7 @@
 									"path": "$['crs']['properties']['name']"
 								},
 								"sink": {
-									"ordinal": 48
+									"ordinal": 38
 								}
 							}
 						],
