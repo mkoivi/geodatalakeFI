@@ -42,69 +42,11 @@
 						"mappings": [
 							{
 								"source": {
-									"path": "$['type']"
-								},
-								"sink": {
-									"ordinal": 1
-								}
-							},
-							{
-								"source": {
-									"path": "['type']"
-								},
-								"sink": {
-									"type": "String",
-									"ordinal": 2
-								}
-							},
-							{
-								"source": {
 									"path": "['id']"
 								},
 								"sink": {
 									"type": "String",
-									"ordinal": 3
-								}
-							},
-							{
-								"source": {
-									"path": "['geometry']['type']"
-								},
-								"sink": {
-									"ordinal": 4
-								}
-							},
-							{
-								"source": {
-									"path": "['geometry_name']"
-								},
-								"sink": {
-									"ordinal": 5
-								}
-							},
-							{
-								"source": {
-									"path": "['properties']['id']"
-								},
-								"sink": {
-									"type": "Int64",
-									"ordinal": 6
-								}
-							},
-							{
-								"source": {
-									"path": "['properties']['versionedId']"
-								},
-								"sink": {
-									"ordinal": 7
-								}
-							},
-							{
-								"source": {
-									"path": "['properties']['rootId']"
-								},
-								"sink": {
-									"ordinal": 8
+									"ordinal": 1
 								}
 							},
 							{
@@ -112,7 +54,7 @@
 									"path": "['properties']['organizationId']"
 								},
 								"sink": {
-									"ordinal": 9
+									"ordinal": 2
 								}
 							},
 							{
@@ -120,7 +62,7 @@
 									"path": "['properties']['addressId']"
 								},
 								"sink": {
-									"ordinal": 10
+									"ordinal": 3
 								}
 							},
 							{
@@ -128,7 +70,7 @@
 									"path": "['properties']['addressType']"
 								},
 								"sink": {
-									"ordinal": 11
+									"ordinal": 4
 								}
 							},
 							{
@@ -136,7 +78,7 @@
 									"path": "['properties']['currentlyOpen']"
 								},
 								"sink": {
-									"ordinal": 12
+									"ordinal": 5
 								}
 							},
 							{
@@ -145,7 +87,7 @@
 								},
 								"sink": {
 									"type": "String",
-									"ordinal": 13
+									"ordinal": 6
 								}
 							},
 							{
@@ -154,7 +96,7 @@
 								},
 								"sink": {
 									"type": "String",
-									"ordinal": 14
+									"ordinal": 7
 								}
 							},
 							{
@@ -163,7 +105,7 @@
 								},
 								"sink": {
 									"type": "String",
-									"ordinal": 15
+									"ordinal": 8
 								}
 							},
 							{
@@ -172,7 +114,7 @@
 								},
 								"sink": {
 									"type": "String",
-									"ordinal": 16
+									"ordinal": 9
 								}
 							},
 							{
@@ -181,7 +123,7 @@
 								},
 								"sink": {
 									"type": "String",
-									"ordinal": 17
+									"ordinal": 10
 								}
 							},
 							{
@@ -190,7 +132,7 @@
 								},
 								"sink": {
 									"type": "String",
-									"ordinal": 18
+									"ordinal": 11
 								}
 							},
 							{
@@ -198,7 +140,7 @@
 									"path": "['properties']['serviceId']"
 								},
 								"sink": {
-									"ordinal": 19
+									"ordinal": 12
 								}
 							},
 							{
@@ -206,7 +148,7 @@
 									"path": "['properties']['serviceNameFi']"
 								},
 								"sink": {
-									"ordinal": 20
+									"ordinal": 13
 								}
 							},
 							{
@@ -214,7 +156,7 @@
 									"path": "['properties']['serviceNameEn']"
 								},
 								"sink": {
-									"ordinal": 21
+									"ordinal": 14
 								}
 							},
 							{
@@ -222,7 +164,7 @@
 									"path": "['properties']['coordinateState']"
 								},
 								"sink": {
-									"ordinal": 22
+									"ordinal": 15
 								}
 							},
 							{
@@ -230,7 +172,7 @@
 									"path": "['properties']['coordinateType']"
 								},
 								"sink": {
-									"ordinal": 23
+									"ordinal": 16
 								}
 							},
 							{
@@ -238,7 +180,7 @@
 									"path": "$['totalFeatures']"
 								},
 								"sink": {
-									"ordinal": 24
+									"ordinal": 17
 								}
 							},
 							{
@@ -246,7 +188,7 @@
 									"path": "$['numberMatched']"
 								},
 								"sink": {
-									"ordinal": 25
+									"ordinal": 18
 								}
 							},
 							{
@@ -254,7 +196,7 @@
 									"path": "$['numberReturned']"
 								},
 								"sink": {
-									"ordinal": 26
+									"ordinal": 19
 								}
 							},
 							{
@@ -262,7 +204,7 @@
 									"path": "$['timeStamp']"
 								},
 								"sink": {
-									"ordinal": 27
+									"ordinal": 20
 								}
 							},
 							{
@@ -270,7 +212,7 @@
 									"path": "$['crs']['type']"
 								},
 								"sink": {
-									"ordinal": 28
+									"ordinal": 21
 								}
 							},
 							{
@@ -278,7 +220,7 @@
 									"path": "$['crs']['properties']['name']"
 								},
 								"sink": {
-									"ordinal": 29
+									"ordinal": 22
 								}
 							}
 						],
