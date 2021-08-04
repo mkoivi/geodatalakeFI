@@ -10,7 +10,7 @@
 		"typeProperties": {
 			"location": {
 				"type": "HttpServerLocation",
-				"relativeUrl": "ows?service=WFS&version=1.0.0&request=GetFeature&typeName=ptv%3AserviceChannel&maxFeatures=50000&outputFormat=application/json"
+				"relativeUrl": "ows?service=WFS&version=1.0.0&request=GetFeature&typeName=ptv%3AserviceChannel&maxFeatures=5000000&outputFormat=application/json"
 			},
 			"encodingName": "UTF-8"
 		},
