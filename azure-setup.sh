@@ -23,4 +23,17 @@ az vm create --resource-group geodatalake-fi-rg --name geodb-vm --image UbuntuLT
 
 # setup databricks
 
+Install-Module -Name Az.Databricks -AllowPrerelease
+Register-AzResourceProvider -ProviderNamespace Microsoft.Databricks
+New-AzDatabricksWorkspace -Name geodatabricks -ResourceGroupName geodatalake-fi-rg -Location westeurope -ManagedResourceGroupName databricks-group -Sku standard
 
+Get-AzDatabricksWorkspace -Name geodatabricks -ResourceGroupName geodatalake-fi-rg |
+  Select-Object -Property Name, SkuName, Location, ProvisioningState
+
+pip install databricks-cli --upgrade
+
+#add vnet peering from databricks to geodb-vm (at databricks side)
+#https://docs.microsoft.com/en-us/azure/databricks/administration-guide/cloud-configurations/azure/vnet-peering#step-1-add-remote-virtual-network-peering-to-the-azure-databricks-virtual-network
+
+# add peering at vnet side
+# https://docs.microsoft.com/en-us/azure/databricks/administration-guide/cloud-configurations/azure/vnet-peering#step-2-add-the-azure-databricks-virtual-network-peer-to-the-remote-virtual-network
