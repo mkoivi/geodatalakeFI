@@ -1,0 +1,12 @@
+{
+	"name": "Tilastokeskus",
+	"properties": {
+		"annotations": [],
+		"type": "RestService",
+		"typeProperties": {
+			"url": "https://geo.stat.fi",
+			"enableServerCertificateValidation": true,
+			"authenticationType": "Anonymous"
+		}
+	}
+}
